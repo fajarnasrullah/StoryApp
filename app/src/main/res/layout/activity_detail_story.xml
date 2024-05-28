@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".authentication.view.story.DetailStoryActivity">
+
+    <ImageView
+        android:id="@+id/imageDetailStory"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_launcher_foreground"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/titleDetailStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Judul"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageDetailStory" />
+
+    <TextView
+        android:id="@+id/descDetailStory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ini deskripsi deksripsi deskripsi"
+        android:textSize="15sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintStart_toStartOf="@+id/titleDetailStory"
+        app:layout_constraintTop_toBottomOf="@+id/titleDetailStory" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
